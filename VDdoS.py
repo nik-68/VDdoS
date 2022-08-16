@@ -28,7 +28,7 @@ print("""\033[35m
   | |_| | |_| | (_) |__) |  / ___ \ |_| || (_| | (__|   < 
   |____/|____/ \___/____/  /_/   \_\__|\__\__,_|\___|_|\_\ © """)
 print()
-ip = input(" IP Target : => ")
+ip = raw_input(" IP Target : => ")
 port = input(" Port       : => ")
 os.system("clear")
 print("\033[93m")
