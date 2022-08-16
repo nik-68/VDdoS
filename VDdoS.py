@@ -1,5 +1,9 @@
 import socket
 import threading
+import os
+import sys
+import time
+
 os.system("clear")
 
 print (''' \033[92m
