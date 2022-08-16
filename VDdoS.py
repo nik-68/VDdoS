@@ -1,8 +1,17 @@
 import socket
 import threading
+os.system("clear")
 
+print (''' \033[92m
+  ____  ____             __  __         
+ |  _ \|  _ \  ___  ___  \ \/ /___  ___ 
+ | | | | | | |/ _ \/ __|  \  // _ \/ __|
+ | |_| | |_| | (_) \__ \  /  \  __/ (__ 
+ |____/|____/ \___/|___/ /_/\_\___|\___|Q''')
+
+print()
 try:
-	ip = input("target's IP: => ");
+	ip = input(" Target's IP: => ");
 
 
 	data = "GET /" + ip + " HTTP/1.1\r\r"
