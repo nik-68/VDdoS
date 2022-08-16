@@ -28,7 +28,6 @@ print("""\033[35m
   | |_| | |_| | (_) |__) |  / ___ \ |_| || (_| | (__|   < 
   |____/|____/ \___/____/  /_/   \_\__|\__\__,_|\___|_|\_\ © """)
 print()
--- coding: utf8 --
 #!/usr/bin/env python3
 import sys, os, time, shodan
 from pathlib import Path
