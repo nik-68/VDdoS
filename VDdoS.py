@@ -54,9 +54,9 @@ def send_thread():
 		for s in socks:
 			try:
 				s.send("f")
-				#print "send OK!"
+				#print( "send OK!")
 			except Exception,ex:
-				print "Send Exception:%s\n"%ex
+				print( "Send Exception:%s\n"%ex)
 				socks.remove(s)
 				s.close()
 		time.sleep(1)
