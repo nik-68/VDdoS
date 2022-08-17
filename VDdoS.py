@@ -41,10 +41,10 @@ def conn_thread():
 		try:
 			s.connect((HOST,PORT))
 			s.send(buf)
-			print "Send buf OK!,conn=%d\n"%i
+			print( "Send buf OK!,conn=%d\n"%i)
 			socks.append(s)
 		except Exception,ex:
-			print "Could not connect to server or send error:%s"%ex
+			print( "Could not connect to server or send error:%s"%ex)
 			time.sleep(10)
 #end def
 
