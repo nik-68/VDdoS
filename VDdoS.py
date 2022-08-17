@@ -66,7 +66,6 @@ while True:
             pass
         sock.sendto(bytes, (ip, port))
         sent += 1
-        print(colored("Packets target sent %s packets  Target: %s" % (
-            sent, ip), 'green'))
+        print(colored("[!] sent %s Target: %s" % (sent, ip, port), 'green'))
     except KeyboardInterrupt:
         sys.exit()
